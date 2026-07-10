@@ -1,0 +1,19 @@
+{
+  "slug": "family-and-student-ai-use",
+  "title": "家庭与学生如何正确使用AI",
+  "description": "帮助家长和学生理解AI依赖、作业边界、学习报告、隐私安全与独立思考之间的关系。",
+  "publishedAt": "2026-07-10",
+  "updatedAt": "2026-07-10",
+  "keywords": ["孩子使用AI", "AI学习边界", "AI作业", "家长AI教育"],
+  "intro": "家庭真正需要解决的，不是让孩子完全不用AI，而是确保AI帮助之后，孩子拥有更多独立理解、解释、迁移和纠错能力。\n\n这个主题把家长最常见的问题组织成一条路径：AI会不会造成依赖、怎样判断AI是在教学还是直接给答案、怎样看懂学习报告、学生如何使用AI完成作业，以及家庭应该怎样建立明确边界。",
+  "articleSlugs": [
+    "children-ai-learning-dependence",
+    "ai-tutor-vs-human-teacher",
+    "how-parents-know-ai-teaches-not-answers",
+    "how-parents-read-ai-learning-reports",
+    "how-students-should-use-ai-for-homework",
+    "family-ai-learning-boundaries",
+    "learning-evidence-beyond-scores"
+  ],
+  "toolSlugs": ["family-ai-learning-boundary-checklist"]
+}

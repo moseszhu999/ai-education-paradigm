@@ -1,0 +1,16 @@
+{
+  "slug": "learning-rails-and-education-agents",
+  "title": "Learning Rails 与教育Agent",
+  "description": "从教育范式变化、Learning Rails、教育Agent到AI原生教育系统，理解有边界的个性化学习结构。",
+  "publishedAt": "2026-07-10",
+  "updatedAt": "2026-07-10",
+  "keywords": ["Learning Rails", "教育Agent", "AI原生教育", "CourseRails"],
+  "intro": "这个主题回答一个核心问题：**AI进入教育之后，为什么不能只增加一个聊天窗口？**\n\nLearning Rails 是教师为学习过程建立的目标、材料、难度、禁止行为、证据要求和人工干预规则。教育Agent在轨道内承担个性化解释、练习与反馈，教师保留正式判断和覆盖权。\n\n建议先阅读教育范式总纲，再进入 Learning Rails 和教育Agent的定义，最后使用试点清单把概念转成一个可验证的小规模实验；已经具备明确场景的教师或机构，也可以进入公开安全的试点合作申请。",
+  "articleSlugs": [
+    "why-ai-changes-education-paradigm",
+    "what-are-learning-rails",
+    "education-agent-not-chatbot",
+    "from-education-management-to-ai-native-system"
+  ],
+  "toolSlugs": ["ai-education-pilot-checklist", "ai-education-pilot-application"]
+}

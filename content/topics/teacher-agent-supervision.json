@@ -1,0 +1,19 @@
+{
+  "slug": "teacher-agent-supervision",
+  "title": "教师如何监督学生Agent",
+  "description": "围绕教师角色、Agent监督、学习证据、教师控制台和必须保留的人类教学决定建立完整路径。",
+  "publishedAt": "2026-07-10",
+  "updatedAt": "2026-07-10",
+  "keywords": ["教师监督Agent", "教师控制台", "学习证据", "AI时代教师能力"],
+  "intro": "教师监督并不等于逐条阅读所有学生与AI的对话。可扩展的监督体系需要先定义轨道，再把正常过程压缩成状态与证据，只把异常、误解、依赖、停滞和正式评价节点送入教师干预队列。\n\n这个主题从“AI是否替代教师”开始，逐步说明一个教师怎样管理多名学生Agent、怎样识别AI代做、哪些决定必须由教师保留，以及教师控制台究竟应该显示什么。",
+  "articleSlugs": [
+    "will-ai-replace-teachers",
+    "how-teachers-manage-student-agents",
+    "how-one-teacher-manages-dozens-of-student-agents",
+    "how-teachers-know-students-understand-or-ai-did-it",
+    "which-teaching-decisions-must-remain-human",
+    "what-should-a-teacher-console-show",
+    "most-important-teacher-skills-in-ai-era"
+  ],
+  "toolSlugs": ["teacher-agent-supervision-checklist"]
+}
