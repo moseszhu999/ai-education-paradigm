@@ -1,0 +1,26 @@
+name: Build static site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm run build
+      - name: Verify SEO outputs
+        run: |
+          test -f dist/index.html
+          test -f dist/articles/index.html
+          test -f dist/sitemap.xml
+          test -f dist/robots.txt
+          test "$(find dist/articles -name index.html | wc -l)" -ge 7
