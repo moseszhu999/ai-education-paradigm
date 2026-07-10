@@ -102,13 +102,25 @@ async function write(relative, content) {
   await fs.writeFile(target, content, 'utf8');
 }
 
+async function loadExternalArticles() {
+  const dir = path.join(root, 'content', 'articles');
+  try {
+    const files = (await fs.readdir(dir)).filter((name) => name.endsWith('.json')).sort();
+    return Promise.all(files.map(async (name) => JSON.parse(await fs.readFile(path.join(dir, name), 'utf8'))));
+  } catch (error) {
+    if (error?.code === 'ENOENT') return [];
+    throw error;
+  }
+}
+
 await fs.rm(outDir, { recursive: true, force: true });
 await fs.mkdir(outDir, { recursive: true });
 await write('styles.css', config.styles);
 await write('favicon.svg', config.favicon);
 await write('og-default.svg', config.ogImage);
 
-const articles = [...config.articles]
+const externalArticles = await loadExternalArticles();
+const articles = [...config.articles, ...externalArticles]
   .filter((article) => !article.draft)
   .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
