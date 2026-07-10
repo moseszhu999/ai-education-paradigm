@@ -73,6 +73,7 @@ function layout({ title, description, pathname, body, type = 'website', jsonLd =
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
+  <meta name="google-site-verification" content="1VqwXHgJlnkzzZwhui5BNQCeGk72fFx62zmG_GF-hjs">
   <link rel="canonical" href="${url}">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/styles.css">
