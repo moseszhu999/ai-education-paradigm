@@ -21,6 +21,14 @@ jobs:
         run: |
           test -f dist/index.html
           test -f dist/articles/index.html
+          test -f dist/topics/index.html
+          test -f dist/tools/index.html
+          test -f dist/feed.xml
           test -f dist/sitemap.xml
           test -f dist/robots.txt
-          test "$(find dist/articles -name index.html | wc -l)" -ge 7
+          test "$(find dist/articles -mindepth 2 -name index.html | wc -l)" -eq 18
+          test "$(find dist/topics -mindepth 2 -name index.html | wc -l)" -eq 3
+          test "$(find dist/tools -mindepth 2 -name index.html | wc -l)" -eq 3
+          test "$(grep -c '<url>' dist/sitemap.xml)" -eq 29
+          grep -q '<lastmod>' dist/sitemap.xml
+          grep -q 'application/rss+xml' dist/index.html
