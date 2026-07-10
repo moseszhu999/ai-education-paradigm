@@ -19,6 +19,7 @@ jobs:
       - run: npm run build
       - name: Verify SEO outputs
         run: |
+          set -euxo pipefail
           test -f dist/index.html
           test -f dist/articles/index.html
           test -f dist/topics/index.html
@@ -28,7 +29,7 @@ jobs:
           test -f dist/robots.txt
           test "$(find dist/articles -mindepth 2 -name index.html | wc -l)" -eq 18
           test "$(find dist/topics -mindepth 2 -name index.html | wc -l)" -eq 3
-          test "$(find dist/tools -mindepth 2 -name index.html | wc -l)" -eq 3
-          test "$(grep -c '<url>' dist/sitemap.xml)" -eq 29
+          test "$(find dist/tools -mindepth 2 -name index.html | wc -l)" -eq 4
+          test "$(grep -c '<url>' dist/sitemap.xml)" -eq 30
           grep -q '<lastmod>' dist/sitemap.xml
           grep -q 'application/rss+xml' dist/index.html
