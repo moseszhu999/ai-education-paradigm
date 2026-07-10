@@ -1,0 +1,68 @@
+name: AI教育试点合作申请
+description: 介绍一个小范围、教师监督、可测量的AI教育试点场景
+title: "[AI教育试点] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你对AI教育新范式试点的兴趣。此Issue是公开的，请勿填写学生姓名、联系方式、学校班级、健康信息、真实作业或其他敏感数据。
+  - type: dropdown
+    id: role
+    attributes:
+      label: 你的角色
+      options:
+        - 一线教师
+        - 学校或机构管理者
+        - 教培机构负责人
+        - 教育研究者
+        - 家长或学习组织者
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: context
+    attributes:
+      label: 学习场景
+      description: 只写大致年龄段、学科和场景，不提供可识别个人的信息。
+      placeholder: 例如：初中数学，小班教学，8至12名学生
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 最希望解决的一个问题
+      placeholder: 描述当前工作流、困难及其影响。
+    validations:
+      required: true
+  - type: textarea
+    id: current-ai
+    attributes:
+      label: 当前AI使用经验
+      description: 已经尝试过什么？哪些有效，哪些失败？
+    validations:
+      required: false
+  - type: textarea
+    id: scope
+    attributes:
+      label: 建议的最小试点范围
+      placeholder: 一个学科、一个目标、一小组学习者、预计周期和教师参与方式。
+    validations:
+      required: true
+  - type: textarea
+    id: measures
+    attributes:
+      label: 希望观察的指标
+      placeholder: 例如教师时间、学生独立完成率、提示依赖、解释与迁移能力。
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: 边界确认
+      options:
+        - label: 我不会在公开Issue中提交任何未成年人或其他个人的敏感信息。
+          required: true
+        - label: 我接受教师保留学习目标、正式评价和关键干预的最终责任。
+          required: true
+        - label: 我愿意记录失败、不确定性和负面结果，而不只展示成功案例。
+          required: true
